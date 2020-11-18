@@ -12,7 +12,7 @@ namespace Week1Challenge
         {
             string firtName = "Cody";
             string lastName = "Morton";
-            int age = 600;
+            int age = 34;
             Console.WriteLine(age + 7);
             Console.WriteLine(age - 7);
             Console.WriteLine(age * 7);
@@ -23,20 +23,20 @@ namespace Week1Challenge
         [TestMethod]
         public void Array()
         {
-            string[] Movie1 = { "Batman", "Die Hard", "Inception", "Little Women" };
+            string[] Movie1 = { "Blow", "House of 1000 corpses", "Anchorman", "Wolfe of Wall Street" };
         }
 
         [TestMethod]
         public void ListOfDates()
         {
             List<DateTime> listOfDates = new List<DateTime>();
-            DateTime today = DateTime.Now;
+            DateTime today = DateTime.Today;
             listOfDates.Add(today);
             listOfDates.Add(new DateTime(2020 / 12 / 25));
             listOfDates.Add(new DateTime(2020, 3, 12));
             listOfDates.Add(new DateTime(2020, 6, 16));
         }
-        {[TestMethod]
+        [TestMethod]
         public void HowMuchSleepDidYouGet()
 
         {
@@ -60,10 +60,12 @@ namespace Week1Challenge
             {
                 Console.WriteLine("oh man get some sleep");
             }
-            { Console.WriteLine()};
+            {
+                Console.WriteLine();
+                    }
 
             }
-        }
+        
     [TestMethod]
     public void HowHasYourDayBeen()
     {
@@ -90,20 +92,23 @@ namespace Week1Challenge
                 break;
             } 
           }
+
     [TestMethod]
     public void Supercalifragilisticexpialidocious()
     {
         string name = "Supercalifragilisticexpialidocious";
         foreach (char letter in name)
-        {
-            Console.WriteLine(letter);
-        }
-        {
-            if (letter == 'i') ;
-            Console.WriteLine();
 
+        {
+            if (letter == 'i')
+            {
+                Console.WriteLine(letter);
+            }
+        else
+        { 
+        Console.WriteLine("Not an i");
+    }
 
-            Console.WriteLine("not a i");
                 }
             }
         }
